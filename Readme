@@ -1,0 +1,44 @@
+This is sample mongo + spring boot application. And below are the things integrated.
+
+https://start.spring.io/;
+https://www.youtube.com/watch?v=vl6DstgPoW8&list=LL&index=1  -- MongoDB with Spring Boot Crash Course - Full Tutorial
+install docker desktop 
+
+docker run -d --name container_name \
+ -e MONGO_INITDB_ROOT_USERNAME=admin \
+ -e MONGO_INITDB_ROOT_PASSWORD=password \
+ -p 27017:27017 mongo
+
+docker run -d --name mongodb -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password -p 27017:27017 mongo
+execute above command in terminal 
+
+download studio 3t 
+
+http://localhost:8080/swagger-ui/
+
+https://www.sonarsource.com/products/sonarqube/downloads/
+
+https://www.sonarsource.com/products/sonarqube/downloads/historical-downloads/
+
+sonarqube requires java 11 .. imp 
+
+C:\Program Files\Java\jdk1.8.0_321
+C:\Program Files\Java\jdk1.8.0_321\bin
+
+C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+above is deleted from system variables .. 
+reason for deletion is since java 8 and 11 present and 11 is set in java home but still 8 is referred ..
+
+http://localhost:9000/projects/create
+
+C:\Users\abhin\Downloads\sonarqube-9.6.1.59531\sonarqube-9.6.1.59531\bin\windows-x86-64>StartSonar.bat
+
+http://localhost:9000/projects?sort=coverage
+
+clean org.jacoco:jacoco-maven-plugin:prepare-agent install 
+add adbove command edit configurations run before launch .. add maven goals /. 
+sonar:sonar -Dsonar.login=squ_f2d7fd1e6f6084102015ab550c855824f492347d
+
+add above command as goal as well 
+
+open sonarque -- my account - security 
